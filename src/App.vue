@@ -1,14 +1,27 @@
 <template>
-  <div class="container">
-    <div>Name: liquidacion_Automatica</div>
-    <div>Framework: vue3</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
+  <!-- Temporal Nav Bar, It's just a reference -->
+  <div id="navBar"></div>
+  <LiquidacionAutomatica>
+  </LiquidacionAutomatica>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue'
+import { defineComponent } from 'vue'
+import LiquidacionAutomatica from './components/Liquidacion Automatica.vue';
 
-  export default defineComponent({});
+export default {
+  components: {
+    LiquidacionAutomatica
+  }
+};
 </script>
+
+<style>
+/* Temporal Nav Bar, It's just a reference */
+#navBar {
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-soft-color);
+}
+</style>
