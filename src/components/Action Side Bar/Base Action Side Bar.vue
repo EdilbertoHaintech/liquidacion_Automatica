@@ -1,28 +1,22 @@
-
-import Validation from './Validation.vue';
-
 <template>
     <!-- Header -->
     <div class="row align-items-start justify-content-evenly">
-        <button>
-            <img src="../../assets/Check_Orange.png" alt="Validaciones" class="tabs_img active_tabs_img">
+        <button @click="changeTab('Validation')">
+            <img src="assets/Check_Orange.png" alt="Validaciones" class="tabs_img active_tabs_img">
         </button>
-        <button>
-            <img src="../../assets/Meds_Gray.png" alt="Medicamentos" class="tabs_img">
+        <button @click="changeTab('Medicines')">
+            <img src="assets/Meds_Gray.png" alt="Medicamentos" class="tabs_img">
         </button>
-        <button>
-            <img src="../../assets/Data_Gray.png" alt="Datos" class="tabs_img">
+        <button @click="changeTab('Data')">
+            <img src="assets/Data_Gray.png" alt="Datos" class="tabs_img">
         </button>
-        <button>
-            <img src="../../assets/Chemistry_Gray.png" alt="Bioequivalencia" class="tabs_img">
+        <button @click="changeTab('Bioequivalence')">
+            <img src="assets/Chemistry_Gray.png" alt="Bioequivalencia" class="tabs_img">
         </button>
     </div>
     <!-- Content -->
     <div class="content">
-        <Validation></Validation>
-        <Medicines></Medicines>
-        <Data></Data>
-        <Bioequivalence></Bioequivalence>
+        <component :is="moduleSelected"></component>
     </div>
 </template>
 
@@ -31,6 +25,7 @@ import Validation from './Validation.vue';
 import Medicines from './Medicines.vue';
 import Data from './Data.vue';
 import Bioequivalence from './Bioequivalence.vue';
+import { DefineComponent } from 'vue';
 
 export default {
     components: {
@@ -39,7 +34,19 @@ export default {
         Data,
         Bioequivalence
     },
+    methods: {
+        changeTab(param: any) {
+            this.moduleSelected = param;
+        }
+    },
+    data() {
+        return {
+            moduleSelected: "Medicines"
+        }
+    },
 };
+
+
 </script>
 
 <style>
@@ -54,7 +61,7 @@ export default {
 }
 
 .content {
-    padding: 10px;
+    padding: 5px 10px 10px 10px;
     height: 72vh;
 }
 </style>

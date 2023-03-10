@@ -72,6 +72,19 @@ button {
   font-weight: 600;
 }
 
+.text_after_icon {
+  margin: 0 0 0 0.5rem;
+  font-weight: 500;
+}
+
+.title_section {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
 /* Some styles of Boostrap */
 .container {
   width: 100%;
@@ -569,6 +582,56 @@ button {
   margin-right: 3rem !important;
 }
 
+/* Margin Top */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-1 {
+  margin: 0.25rem !important;
+}
+
+.m-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+/* Margin Bottom */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
 /* Padding */
 .p-0 {
   padding: 0 !important;
@@ -697,6 +760,22 @@ button {
 /* Flex */
 .d-flex {
   display: flex !important;
+}
+
+.flex-row {
+  flex-direction: row !important
+}
+
+.flex-column {
+  flex-direction: column !important
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse !important
 }
 
 .align-items-start {
