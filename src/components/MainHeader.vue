@@ -1,5 +1,5 @@
 <template>
-    <div class="row pt-1 pb-1 w-95 justify-content-between">
+    <div class="row pt-0 pb-3 justify-content-between">
         <!-- Could be replace to a button -->
         <a href="#" class="d-flex align-items-center justify-content-start">
             <img src="../assets/Back_Arrow_Orange.png" alt="Regresar">
@@ -47,6 +47,5 @@
 .col-86p {
     flex: 0 0 86%;
     max-width: 86%;
-
 }
 </style>

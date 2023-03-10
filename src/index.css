@@ -72,8 +72,6 @@ button {
   font-weight: 600;
 }
 
-
-
 /* Some styles of Boostrap */
 .container {
   width: 100%;
@@ -84,8 +82,7 @@ button {
 .row {
   display: flex;
   /* Originally is wrap */
-  flex-wrap: nowrap;
-  margin: 0 10px;
+  flex-wrap: wrap;
 }
 
 /* Extra Small screen sizes (less than 576px) */
@@ -790,6 +787,10 @@ button {
 
 .w-75 {
   width: 75% !important
+}
+
+.w-95 {
+  width: 95% !important
 }
 
 .w-100 {
