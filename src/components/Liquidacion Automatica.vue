@@ -6,7 +6,7 @@
             <div class="col-75p" style="background-color: var(--primary-soft-color);">
                 <Viewer></Viewer>
                 <button class="send_btn">
-                    <img src="assets/Send_White.png" alt="Enviar">
+                    <img src="assets/Send.svg" alt="Enviar" class="white_filter">
                 </button>
             </div>
             <div class="col-25p">

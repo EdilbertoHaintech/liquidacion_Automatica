@@ -19,6 +19,7 @@ body {
   --red-no-validated-color: #E0132B;
   --red-no-validated-bg-color: #FFA3AE;
   --gray-soft: #e4e4e4;
+  --gray-icon: #757575;
 }
 
 a {
@@ -70,10 +71,18 @@ body::-webkit-scrollbar-track {
   font-weight: 600;
 }
 
-.orange_filter {
+.primary_color_filter {
   /* Filter to change color to Primary Color #E7632F on SVG*/
   /* Use https://codepen.io/sosuke/pen/Pjoqqp to get wanted color on SVG*/
   filter: invert(44%) sepia(62%) saturate(991%) hue-rotate(339deg) brightness(95%) contrast(90%);
+}
+
+.gray_filter {
+  filter: invert(47%) sepia(0%) saturate(1%) hue-rotate(251deg) brightness(96%) contrast(89%);
+}
+
+.white_filter {
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(117deg) brightness(110%) contrast(99%);
 }
 
 .no_validated_text {

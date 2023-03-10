@@ -3,16 +3,16 @@
     <div class="row align-items-start justify-content-evenly">
         <button @click="changeTab('Validation')">
             <!-- <img src="assets/Check_Gray.png" alt="Validaciones" class="tabs_img" v-bind:class="{ 'active_tabs_img': botonClickeado }"> -->
-            <img src="assets/Check_Gray.png" alt="Validaciones" class="tabs_img active_tabs_img">
+            <img src="assets/Check_Basic.svg" alt="Validaciones" class="tabs_img active_tabs_img">
         </button>
         <button @click="changeTab('Medicines')">
-            <img src="assets/Meds_Gray.png" alt="Medicamentos">
+            <img src="assets/Meds.svg" alt="Medicamentos" class="gray_filter">
         </button>
         <button @click="changeTab('Data')">
-            <img src="assets/Data_Gray.png" alt="Datos">
+            <img src="assets/Data.svg" alt="Datos" class="gray_filter">
         </button>
         <button @click="changeTab('Bioequivalence')">
-            <img src="assets/Chemistry_Gray.png" alt="Bioequivalencia">
+            <img src="assets/Chemistry.svg" alt="Bioequivalencia" class="gray_filter">
         </button>
     </div>
     <!-- Content -->

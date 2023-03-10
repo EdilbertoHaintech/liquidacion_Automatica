@@ -2,7 +2,7 @@
     <div class="row pt-0 pb-3 justify-content-between">
         <!-- Could be replace to a button -->
         <a href="#" class="d-flex align-items-center justify-content-start">
-            <img src="assets/Back_Arrow_Orange.png" alt="Regresar">
+            <img src="assets/Prev_Arrow.svg" alt="Regresar" class="primary_color_filter">
             <span class="text_after_icon">Volver</span>
         </a>
         <div class="col-86p d-flex justify-content-start">
@@ -20,11 +20,11 @@
         <div class="pr-0 d-flex align-items-center">
             <!-- Could be replace to a button -->
             <a href="#" class="d-flex align-items-center justify-content-start">
-                <img src="assets/Prev_Page_Orange.png" alt="Caso Anterior">
+                <img src="assets/Prev_Arrow.svg" alt="Caso Anterior" class="primary_color_filter">
             </a>
             <span class="ml-2 mr-2" style="color: var(--primary-color); font-weight: 500;">Casos</span>
             <a href="#" class="d-flex align-items-center justify-content-start">
-                <img src="assets/Next_Page_Orange.png" alt="Caso Siguiente">
+                <img src="assets/Next_Arrow.svg" alt="Caso Siguiente" class="primary_color_filter">
             </a>
         </div>
     </div>
