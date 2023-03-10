@@ -106,6 +106,18 @@ body::-webkit-scrollbar-track {
   margin: 0 0 10px 0;
 }
 
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
 /* Some styles of Boostrap */
 .container {
   width: 100%;

@@ -25,5 +25,16 @@
 <style>
 .control_header {
     background-color: var(--primary-color);
+    border-radius: 5px 5px 0 0;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid white;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
 }
 </style>
