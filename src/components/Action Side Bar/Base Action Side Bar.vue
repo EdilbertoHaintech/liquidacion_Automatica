@@ -2,16 +2,17 @@
     <!-- Header -->
     <div class="row align-items-start justify-content-evenly">
         <button @click="changeTab('Validation')">
-            <img src="assets/Check_Orange.png" alt="Validaciones" class="tabs_img active_tabs_img">
+            <!-- <img src="assets/Check_Gray.png" alt="Validaciones" class="tabs_img" v-bind:class="{ 'active_tabs_img': botonClickeado }"> -->
+            <img src="assets/Check_Gray.png" alt="Validaciones" class="tabs_img active_tabs_img">
         </button>
         <button @click="changeTab('Medicines')">
-            <img src="assets/Meds_Gray.png" alt="Medicamentos" class="tabs_img">
+            <img src="assets/Meds_Gray.png" alt="Medicamentos">
         </button>
         <button @click="changeTab('Data')">
-            <img src="assets/Data_Gray.png" alt="Datos" class="tabs_img">
+            <img src="assets/Data_Gray.png" alt="Datos">
         </button>
         <button @click="changeTab('Bioequivalence')">
-            <img src="assets/Chemistry_Gray.png" alt="Bioequivalencia" class="tabs_img">
+            <img src="assets/Chemistry_Gray.png" alt="Bioequivalencia">
         </button>
     </div>
     <!-- Content -->
@@ -37,11 +38,13 @@ export default {
     methods: {
         changeTab(param: any) {
             this.moduleSelected = param;
+            this.botonClickeado = true;
         }
     },
     data() {
         return {
-            moduleSelected: "Medicines"
+            moduleSelected: "Medicines",
+            botonClickeado: false
         }
     },
 };
@@ -58,6 +61,9 @@ export default {
     padding: 0 0 5px 0;
     border-bottom: 2px solid var(--primary-color);
     border-radius: 2px;
+    /* Filter to change color to Primary Color #E7632F on SVG*/
+    /* Use https://codepen.io/sosuke/pen/Pjoqqp to get wanted color on SVG*/
+    filter: invert(44%) sepia(62%) saturate(991%) hue-rotate(339deg) brightness(95%) contrast(90%);
 }
 
 .content {

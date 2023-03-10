@@ -23,6 +23,6 @@
     display: flex;
     align-content: center;
     position: absolute;
-    bottom: 0;
+    bottom: 4vh;
 }
 </style>
