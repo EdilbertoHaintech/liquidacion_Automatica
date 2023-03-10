@@ -3,10 +3,11 @@
         <!-- Header: Case Buttons Actions and Data about Case, Ticket & Person -->
         <MainHeader></MainHeader>
         <div class="row">
-            <div class="col-75p" style="background-color:brown;">
+            <div class="col-75p" style="background-color: var(--primary-soft-color);">
                 <Viewer></Viewer>
             </div>
-            <div class="col-25p" style="background-color: aqua;">
+            <div class="col-25p">
+                <BaseActionSideBar></BaseActionSideBar>
             </div>
         </div>
     </div>
@@ -15,11 +16,13 @@
 <script lang="ts">
 import MainHeader from './MainHeader.vue';
 import Viewer from './Viewer.vue';
+import BaseActionSideBar from './Action Side Bar/Base Action Side Bar.vue';
 
 export default {
     components: {
         MainHeader,
-        Viewer
+        Viewer,
+        BaseActionSideBar
     },
 };
 </script>
