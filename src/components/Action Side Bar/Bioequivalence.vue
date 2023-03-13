@@ -42,11 +42,13 @@
 </template>
 
 <script lang="ts">
-import ControlHeaderTable from './Control Header Table.vue';
+import ControlHeaderTable from './ControlHeaderTable.vue';
+
+
 
 export default {
     components: {
-        ControlHeaderTable
-    },
+    ControlHeaderTable
+},
 };
 </script>

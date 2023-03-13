@@ -57,14 +57,14 @@
 </template>
 
 <script lang="ts">
-import ControlHeaderTable from './Control Header Table.vue';
 import SimpleExample from "../../../public/JSON/Simple Example";
 import SimpleExample1 from "../../../public/JSON/Simple Example - Copy";
+import ControlHeaderTable from "./ControlHeaderTable.vue";
 
 export default {
     components: {
-        ControlHeaderTable
-    },
+    ControlHeaderTable
+},
     data() {
         return {
             data1: SimpleExample,
