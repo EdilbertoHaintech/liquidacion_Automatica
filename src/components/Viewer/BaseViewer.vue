@@ -2,9 +2,10 @@
     <div class="canvas">
         <!-- Header: Case Buttons Actions and Data about Case, Ticket & Person -->
         <MainHeader></MainHeader>
+        <!-- Content -->
         <div class="row">
             <div class="col-75p" style="background-color: var(--primary-soft-color);">
-                <Viewer></Viewer>
+                <InnerViewer></InnerViewer>
                 <button class="send_btn">
                     <img src="assets/Send.svg" alt="Enviar" class="white_filter">
                 </button>
@@ -18,15 +19,15 @@
 
 <script lang="ts">
 import BaseActionSideBar from './Action Side Bar/BaseActionSideBar.vue';
+import InnerViewer from './InnerViewer.vue';
 import MainHeader from './MainHeader.vue';
-import Viewer from './Viewer.vue';
 
 
 export default {
     components: {
-    MainHeader,
-    Viewer,
-    BaseActionSideBar
+    InnerViewer,
+    BaseActionSideBar,
+    MainHeader
 },
 };
 </script>

@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import SingleTicket from "../../public/JSON/SingleTicket";
+import SingleTicket from "../../../public/JSON/SingleTicket";
 
 export default {
     components: {

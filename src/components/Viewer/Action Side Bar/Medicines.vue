@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import MedicinesDataExample from "../../../public/JSON/MedicinesExample";
+import MedicinesDataExample from "../../../../public/JSON/MedicinesExample";
 import ControlHeaderTable from "./ControlHeaderTable.vue";
 
 export default {
