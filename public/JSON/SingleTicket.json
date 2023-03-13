@@ -1,0 +1,13 @@
+[
+    {
+        "Ticket": "0002",
+        "Tipo": "Receta medica",
+        "Ingreso": "01-11-2020",
+        "PlazoEntrega": "03-04-2023",
+        "Asegurado": "Ana Garcia",
+        "RUT": "11.223.344-5",
+        "Farmacia": "Farmacias Ahumada",
+        "RUTfarmacia": "99.887.766-4",
+        "Validado": false
+    }
+]

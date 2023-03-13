@@ -110,6 +110,14 @@ th {
   filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(117deg) brightness(110%) contrast(99%);
 }
 
+.validated_text {
+  color: var(--green-validated-color);
+  padding: 1px 6px;
+  border-radius: 5px;
+  background-color: var(--green-validated-bg-color);
+  font-weight: 600;
+}
+
 .no_validated_text {
   color: var(--red-no-validated-color);
   padding: 1px 6px;

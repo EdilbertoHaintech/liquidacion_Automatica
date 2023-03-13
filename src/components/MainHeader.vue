@@ -6,15 +6,17 @@
             <span class="text_after_icon">Volver</span>
         </a>
         <div class="col-86p d-flex justify-content-start">
-            <div class="back_data">
-                <span class="no_validated_text">Ticket #12345</span>
-                <span>Tipo<span class="bold">Medicamento</span></span>
-                <span>Ingreso<span class="bold">22/02/2023</span></span>
-                <span>Plazo Entrega<span class="bold">12/03/2023</span></span>
-                <span>Asegurado<span class="bold">Ricardo Darin</span></span>
-                <span>RUT<span class="bold">101023345</span></span>
-                <span>Farmacia<span class="bold">Nuevo Chile</span></span>
-                <span>RUT F<span class="bold">10012345</span></span>
+            <div class="back_data" v-for="ticket in tickets" :key="ticket.Ticket">
+                <span :class="{ 'validated_text': ticket.Validado == true,
+                    'no_validated_text': ticket.Validado != true }">Ticket#{{ ticket.Ticket }}</span>
+                <span>Tipo</span><span class="bold">{{ ticket.Tipo }}</span>
+                <!-- <span>Validado</span><span class="bold">{{ ticket.Validado }}</span> -->
+                <span>Ingreso</span><span class="bold">{{ ticket.Ingreso }}</span>
+                <span>Plazo Entrega</span><span class="bold">{{ ticket.PlazoEntrega }}</span>
+                <span>Asegurado</span><span class="bold">{{ ticket.Asegurado }}</span>
+                <span>RUT</span><span class="bold">{{ ticket.RUT }}</span>
+                <span>Farmacia</span><span class="bold">{{ ticket.Farmacia }}</span>
+                <span>RUT F</span><span class="bold">{{ ticket.RUTfarmacia }}</span>
             </div>
         </div>
         <div class="pr-0 d-flex align-items-center">
@@ -29,6 +31,20 @@
         </div>
     </div>
 </template>
+
+<script lang="ts">
+import SingleTicket from "../../public/JSON/SingleTicket";
+
+export default {
+    components: {
+    },
+    data() {
+        return {
+            tickets: SingleTicket
+        }
+    }
+};
+</script>
 
 <style>
 .back_data {

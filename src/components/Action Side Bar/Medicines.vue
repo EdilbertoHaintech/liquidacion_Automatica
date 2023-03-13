@@ -44,9 +44,3 @@ export default {
     }
 };
 </script>
-
-<style>
-thead {
-    display: flex;
-}
-</style>

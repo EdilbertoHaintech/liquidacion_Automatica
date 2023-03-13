@@ -1,32 +1,49 @@
 <template>
     <div class="d-flex flex-column">
         <span class="title_section">Datos</span>
-        <div class="data">
-            <span class="no_validated_text">Ticket #12345</span>
-            <div class="row d-flex">
-                <span>Tipo</span><span class="bold">Medicamento</span>
+        <div class="data" v-for="ticket in tickets" :key="ticket.Ticket">
+            <span :class="{ 'validated_text': ticket.Validado == true, 'no_validated_text': ticket.Validado != true }">Ticket #{{ ticket.Ticket }}</span>
+            <div>
+                <span>Tipo</span><span class="bold">{{ ticket.Tipo }}</span>
             </div>
-            <div class="row">
-                <span>Ingreso</span><span class="bold">22/02/2023</span>
+            <div>
+                <span>Validado</span><span class="bold">{{ ticket.Validado }}</span>
             </div>
-            <div class="row">
-                <span>Plazo Entrega</span><span class="bold">12/03/2023</span>
+            <div>
+                <span>Ingreso</span><span class="bold">{{ ticket.Ingreso }}</span>
             </div>
-            <div class="row">
-                <span>Asegurado</span><span class="bold">Ricardo Darin</span>
+            <div>
+                <span>Plazo Entrega</span><span class="bold">{{ ticket.PlazoEntrega }}</span>
             </div>
-            <div class="row">
-                <span>RUT</span><span class="bold">101023345</span>
+            <div>
+                <span>Asegurado</span><span class="bold">{{ ticket.Asegurado }}</span>
             </div>
-            <div class="row">
-                <span>Farmacia</span><span class="bold">Nuevo Chile</span>
+            <div>
+                <span>RUT</span><span class="bold">{{ ticket.RUT }}</span>
             </div>
-            <div class="row">
-                <span>RUT F</span><span class="bold">10012345</span>
+            <div>
+                <span>Farmacia</span><span class="bold">{{ ticket.Farmacia }}</span>
+            </div>
+            <div>
+                <span>RUT F</span><span class="bold">{{ ticket.RUTfarmacia }}</span>
             </div>
         </div>
     </div>
 </template>
+
+<script lang="ts">
+import SingleTicket from "../../../public/JSON/SingleTicket";
+
+export default {
+    components: {
+    },
+    data() {
+        return {
+            tickets: SingleTicket
+        }
+    }
+};
+</script>
 
 <style>
 .data {
@@ -39,5 +56,11 @@
 
 .data span {
     margin: 3px 5px;
+}
+
+.data div {
+    width: 100%;
+    display: flex!important;
+    justify-content: space-between;
 }
 </style>
