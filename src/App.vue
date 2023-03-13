@@ -7,13 +7,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import LiquidacionAutomatica from './components/Liquidacion Automatica.vue';
 import Footer from './components/Footer.vue';
+import LiquidacionAutomatica from './components/LiquidacionAutomatica.vue';
 
 export default {
   components: {
-    LiquidacionAutomatica,
-    Footer
+    Footer,
+    LiquidacionAutomatica
 }
 };
 </script>
