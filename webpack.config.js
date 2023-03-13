@@ -59,7 +59,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "liquidacion_Automatica",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {'mf_tables': 'mf_tables@http://localhost:4500/remoteEntry.js'},
       exposes: {},
       shared: require("./package.json").dependencies,
     }),

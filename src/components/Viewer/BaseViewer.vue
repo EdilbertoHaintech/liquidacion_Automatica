@@ -42,7 +42,7 @@ export default {
 .col-25p {
     flex: 0 0 25%;
     max-width: 25%;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .send_btn {
