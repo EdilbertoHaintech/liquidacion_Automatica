@@ -1,5 +1,5 @@
 <template>
-    <div class="control_header d-flex justify-content-between align-content-center">
+    <div class="table_header d-flex justify-content-between align-content-center" style="">
         <div class="search row">
             <button type="button">
                 <img src="assets/Search.svg" alt="Buscador" class="white_filter">
@@ -20,11 +20,9 @@
     </div>
 </template>
 
-<style>
-.control_header {
+<style scoped>
+.table_header {
     background-color: var(--primary-color);
-    border-radius: 5px 5px 0 0;
-    padding: 10px;
 }
 
 input {

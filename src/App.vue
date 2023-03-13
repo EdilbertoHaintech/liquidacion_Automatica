@@ -2,7 +2,7 @@
   <!-- Temporal Nav Bar, It's just a reference -->
   <div id="navBar"></div>
   <BaseTable></BaseTable>
-  <BaseViewer></BaseViewer>
+  <!-- <BaseViewer></BaseViewer> -->
   <Footer></Footer>
 </template>
 

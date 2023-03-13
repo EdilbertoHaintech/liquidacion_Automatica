@@ -33,14 +33,6 @@ export default {
 </script>
 
 <style>
-.canvas {
-    width: 96%;
-    margin: 3vh auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
-}
-
 .col-75p {
     flex: 0 0 75%;
     max-width: 75%;
