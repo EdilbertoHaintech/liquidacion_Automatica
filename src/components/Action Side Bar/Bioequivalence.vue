@@ -2,6 +2,11 @@
     <div class="d-flex flex-column">
         <span class="title_section">Bioequivalencia</span>
         <ControlHeaderTable></ControlHeaderTable>
+        <!-- <ul>
+            <li v-for="user in data1.usuarios" :key="medicine.id">
+                {{ medicine.nombre }} {{ medicine.apellido }}
+            </li>
+        </ul> -->
         <details>
             <summary>Paracetamol:</summary>
             <ul>
@@ -48,7 +53,7 @@ import ControlHeaderTable from './ControlHeaderTable.vue';
 
 export default {
     components: {
-    ControlHeaderTable
-},
+        ControlHeaderTable
+    },
 };
 </script>

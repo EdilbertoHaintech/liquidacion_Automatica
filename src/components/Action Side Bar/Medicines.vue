@@ -2,54 +2,27 @@
     <div class="d-flex flex-column">
         <span class="title_section">Medicamentos</span>
         <ControlHeaderTable></ControlHeaderTable>
-        <!-- Generic Table -->
-        <!-- <table>
+        <table>
             <thead>
                 <tr>
-                    <th>Reembolso</th>
+                    <th><input type="checkbox" />R</th>
                     <th>Código</th>
-                    <th>Cantidad</th>
+                    <th>Medicamento</th>
+                    <th>C</th>
                     <th>Total</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>001</td>
-                    <td>2</td>
-                    <td>$10.00</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>002</td>
-                    <td>1</td>
-                    <td>$5.00</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>003</td>
-                    <td>3</td>
-                    <td>$15.00</td>
-                </tr>
-            </tbody>
-        </table> -->
-
-        <ul>
-            <li v-for="user in data1.usuarios" :key="user.id">
-                {{ user.nombre }} {{ user.apellido }}
-            </li>
-        </ul>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="user in data2" :key="user.id">
-                    <td>{{ user.nombre }}</td>
-                    <td>{{ user.apellido }}</td>
+                <tr v-for="medicine in medicineData" :key="medicine.Codigo">
+                    <td>
+                        <!-- <input type="checkbox" :checked="medicine.Reembolso" v-model="medicine.Reembolso"
+                            @change="guardarCambios(medicamento)" /> -->
+                        <input type="checkbox" :checked="medicine.Reembolso" v-model="medicine.Reembolso"/>
+                    </td>
+                    <td>{{ medicine.Codigo }}</td>
+                    <td>{{ medicine.Medicamento }}</td>
+                    <td>{{ medicine.Cantidad }}</td>
+                    <td>{{ medicine.Total }}</td>
                 </tr>
             </tbody>
         </table>
@@ -57,19 +30,23 @@
 </template>
 
 <script lang="ts">
-import SimpleExample from "../../../public/JSON/Simple Example";
-import SimpleExample1 from "../../../public/JSON/Simple Example - Copy";
+import MedicinesDataExample from "../../../public/JSON/MedicinesExample";
 import ControlHeaderTable from "./ControlHeaderTable.vue";
 
 export default {
     components: {
-    ControlHeaderTable
-},
+        ControlHeaderTable
+    },
     data() {
         return {
-            data1: SimpleExample,
-            data2: SimpleExample1
+            medicineData: MedicinesDataExample
         }
     }
 };
 </script>
+
+<style>
+thead {
+    display: flex;
+}
+</style>

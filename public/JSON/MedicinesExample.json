@@ -1,0 +1,72 @@
+[
+    {
+        "Reembolso": true,
+        "Codigo": "ABC123",
+        "Medicamento": "Paracetamol",
+        "Cantidad": 3,
+        "Total": 25.50
+    },
+    {
+        "Reembolso": false,
+        "Codigo": "DEF456",
+        "Medicamento": "Ibuprofeno",
+        "Cantidad": 2,
+        "Total": 15.00
+    },
+    {
+        "Reembolso": true,
+        "Codigo": "GHI789",
+        "Medicamento": "Amoxicilina",
+        "Cantidad": 1,
+        "Total": 10.00
+    },
+    {
+        "Reembolso": false,
+        "Codigo": "JKL012",
+        "Medicamento": "Omeprazol",
+        "Cantidad": 4,
+        "Total": 30.00
+    },
+    {
+        "Reembolso": true,
+        "Codigo": "MNO345",
+        "Medicamento": "Loratadina",
+        "Cantidad": 2,
+        "Total": 12.00
+    },
+    {
+        "Reembolso": false,
+        "Codigo": "PQR678",
+        "Medicamento": "Ciprofloxacino",
+        "Cantidad": 1,
+        "Total": 8.50
+    },
+    {
+        "Reembolso": true,
+        "Codigo": "STU901",
+        "Medicamento": "Dexametasona",
+        "Cantidad": 3,
+        "Total": 42.00
+    },
+    {
+        "Reembolso": false,
+        "Codigo": "VWX234",
+        "Medicamento": "Metformina",
+        "Cantidad": 2,
+        "Total": 20.00
+    },
+    {
+        "Reembolso": true,
+        "Codigo": "YZA567",
+        "Medicamento": "Salbutamol",
+        "Cantidad": 1,
+        "Total": 7.50
+    },
+    {
+        "Reembolso": false,
+        "Codigo": "BCD890",
+        "Medicamento": "Atorvastatina",
+        "Cantidad": 1,
+        "Total": 5.00
+    }
+]

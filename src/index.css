@@ -67,6 +67,31 @@ body::-webkit-scrollbar-track {
   background-color: #fff
 }
 
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--primary-soft-color);
+}
+
+th {
+  background-color: var(--primary-soft-color);
+}
+
 .bold {
   font-weight: 600;
 }
@@ -104,18 +129,6 @@ body::-webkit-scrollbar-track {
   text-align: center;
   font-size: 16px;
   margin: 0 0 10px 0;
-}
-
-input {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  background-color: transparent;
-}
-
-input:focus {
-  outline: none;
 }
 
 /* Some styles of Boostrap */
