@@ -1,0 +1,100 @@
+[
+    {
+        "code": "numberApplication",
+        "name": "No Solicitud",
+        "datatype": {
+            "name": "string",
+            "code": "STR",
+            "format": null,
+            "id": 1
+        },
+        "size": 50,
+        "generateFilter": false,
+        "display": true,
+        "id": 30
+    },
+    {
+        "code": "documentType",
+        "name": "Tipo Documento",
+        "datatype": {
+            "name": "string",
+            "code": "STR",
+            "format": null,
+            "id": 1
+        },
+        "size": 50,
+        "generateFilter": false,
+        "display": true,
+        "id": 31
+    },
+    {
+        "code": "registrationDate",
+        "name": "Fecha Registro",
+        "datatype": {
+            "name": "date-2",
+            "code": "DATE-2",
+            "format": "DD-MM-YYYY",
+            "id": 9
+        },
+        "size": 10,
+        "generateFilter": false,
+        "display": true,
+        "id": 32
+    },
+    {
+        "code": "validationDate",
+        "name": "Fecha Validación",
+        "datatype": {
+            "name": "date-2",
+            "code": "DATE-2",
+            "format": "DD-MM-YYYY",
+            "id": 9
+        },
+        "size": 10,
+        "generateFilter": false,
+        "display": true,
+        "id": 33
+    },
+    {
+        "code": "ticketValidation",
+        "name": "Validación Boleta",
+        "datatype": {
+            "name": "string",
+            "code": "STR",
+            "format": null,
+            "id": 1
+        },
+        "size": 50,
+        "generateFilter": false,
+        "display": true,
+        "id": 34
+    },
+    {
+        "code": "medicalValidation",
+        "name": "Validación Medico",
+        "datatype": {
+            "name": "string",
+            "code": "STR",
+            "format": null,
+            "id": 1
+        },
+        "size": 50,
+        "generateFilter": false,
+        "display": true,
+        "id": 35
+    },
+    {
+        "code": "documentNumber",
+        "name": "No Documento",
+        "datatype": {
+            "name": "string",
+            "code": "STR",
+            "format": null,
+            "id": 1
+        },
+        "size": 50,
+        "generateFilter": false,
+        "display": true,
+        "id": 36
+    }
+]

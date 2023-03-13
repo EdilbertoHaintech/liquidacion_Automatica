@@ -97,6 +97,38 @@ select {
   width: 90%;
 }
 
+.br-a-5 {
+  border-radius: 5px;
+}
+.br-a-10 {
+  border-radius: 10px;
+}
+.primary{
+  background: var(--primary-color)!important;
+}
+.primary-soft{
+  background: var(--primary-soft-color);
+}
+.secondary{
+  background: var(--secondary-color);
+}
+.secondary-soft{
+  background: var(--secondary-soft-color);
+}
+
+.primary--text{
+  color: var(--primary-color);
+}
+.primary-soft--text{
+  color: var(--primary-soft-color);
+}
+.secondary--text{
+  color: var(--secondary-color);
+}
+.secondary-soft--text{
+  color: var(--secondary-soft-color);
+}
+
 .canvas {
   width: 96%;
   margin: 2vh auto;

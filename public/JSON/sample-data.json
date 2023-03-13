@@ -1,0 +1,71 @@
+[
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+    },
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+        
+    },
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+        
+    },
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+        
+    },
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+        
+    },
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+        
+    },
+    {
+        "numberApplication": "123456",
+        "documentType": "BOLETA",
+        "registrationDate":"01-01-2023",
+        "validationDate":"01-01-2023",
+        "ticketValidation":"OK",
+        "medicalValidation":"NOTOK",
+        "documentNumber":"123"
+        
+    }
+]

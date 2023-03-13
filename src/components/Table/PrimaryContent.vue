@@ -4,7 +4,7 @@
             <DynamicTableFilters />
             <DynamicTableFields />
         </div>
-        <div class="col-10">
+        <div class="col-10"> 
             <TablePreHeader />
             <Table></Table>
         </div>
