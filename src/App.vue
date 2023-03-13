@@ -12,6 +12,7 @@ import BaseTable from './components/Table/BaseTable.vue';
 import BaseViewer from './components/Viewer/BaseViewer.vue';
 import Footer from './components/Footer.vue';
 
+
 export default {
   components: {
     BaseTable,

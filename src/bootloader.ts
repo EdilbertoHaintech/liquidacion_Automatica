@@ -1,3 +1,4 @@
+import DynamicComponent from 'mf_tables/DynamicComponent'
 import { createApp } from "vue";
 
 import "./index.css";
