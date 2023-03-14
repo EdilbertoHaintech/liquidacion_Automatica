@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import BaseActionSideBar from './Action Side Bar/BaseActionSideBar.vue';
+import BaseActionSideBar from './ActionSideBar/BaseActionSideBar.vue';
 import InnerViewer from './InnerViewer.vue';
 import MainHeader from './MainHeader.vue';
 import Viewer2 from './Viewer2.vue';
