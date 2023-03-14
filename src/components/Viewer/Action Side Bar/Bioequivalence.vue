@@ -2,58 +2,29 @@
     <div class="d-flex flex-column">
         <span class="title_section">Bioequivalencia</span>
         <ControlHeaderTable></ControlHeaderTable>
-        <!-- <ul>
-            <li v-for="user in data1.usuarios" :key="medicine.id">
-                {{ medicine.nombre }} {{ medicine.apellido }}
-            </li>
-        </ul> -->
-        <details>
-            <summary>Paracetamol:</summary>
-            <ul>
-                <li>Advil</li>
-                <li>Dolorin</li>
-                <li>Medicamento Equivalente 1</li>
-                <li>Medicamento Equivalente 2</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Medicamento 1:</summary>
-            <ul>
-                <li>Medicamento Equivalente 1</li>
-                <li>Medicamento Equivalente 2</li>
-                <li>Medicamento Equivalente 3</li>
-                <li>Medicamento Equivalente 4</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Medicamento 2:</summary>
-            <ul>
-                <li>Medicamento Equivalente 1</li>
-                <li>Medicamento Equivalente 2</li>
-                <li>Medicamento Equivalente 3</li>
-                <li>Medicamento Equivalente 4</li>
-            </ul>
-        </details>
-        <details>
-            <summary>Medicamento 3:</summary>
-            <ul>
-                <li>Medicamento Equivalente 1</li>
-                <li>Medicamento Equivalente 2</li>
-                <li>Medicamento Equivalente 3</li>
-                <li>Medicamento Equivalente 4</li>
-            </ul>
-        </details>
+        <div v-for="(medicine, index) in medicineData" :key="index">
+            <details>
+                <summary>{{ medicine.nombre }}</summary>
+                <ul>
+                    <li v-for="(bioequivalente, i) in medicine.bioequivalentes" :key="i">{{ bioequivalente }}</li>
+                </ul>
+            </details>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
 import ControlHeaderTable from './ControlHeaderTable.vue';
-
-
+import BioquevalenceData from "../../../../public/JSON/Bioquevalence";
 
 export default {
     components: {
         ControlHeaderTable
     },
+    data() {
+        return {
+            medicineData: BioquevalenceData
+        }
+    }
 };
 </script>

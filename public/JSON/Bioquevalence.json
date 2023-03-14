@@ -1,0 +1,82 @@
+[
+    {
+        "nombre": "Aspirina",
+        "bioequivalentes": [
+            "Acido acetilsalicilico",
+            "Adiro",
+            "Aspirina Cardio"
+        ]
+    },
+    {
+        "nombre": "Paracetamol",
+        "bioequivalentes": [
+            "Dolostop",
+            "Efferalgan",
+            "Termalgin"
+        ]
+    },
+    {
+        "nombre": "Ibuprofeno",
+        "bioequivalentes": [
+            "Brufen",
+            "Dalsy",
+            "Junifen"
+        ]
+    },
+    {
+        "nombre": "Omeprazol",
+        "bioequivalentes": [
+            "Antra",
+            "Gasec",
+            "Losec"
+        ]
+    },
+    {
+        "nombre": "Loratadina",
+        "bioequivalentes": [
+            "Claritin",
+            "Clarityne",
+            "Lomilan"
+        ]
+    },
+    {
+        "nombre": "Simvastatina",
+        "bioequivalentes": [
+            "Gastrogal",
+            "Lipex",
+            "Zocor"
+        ]
+    },
+    {
+        "nombre": "Losartan",
+        "bioequivalentes": [
+            "Cozaar",
+            "Lorzaar",
+            "Renitec"
+        ]
+    },
+    {
+        "nombre": "Metformina",
+        "bioequivalentes": [
+            "Dimefor",
+            "Glucofage",
+            "Siofor"
+        ]
+    },
+    {
+        "nombre": "Amoxicilina",
+        "bioequivalentes": [
+            "Amoxidal",
+            "Augmentin",
+            "Moxiclav"
+        ]
+    },
+    {
+        "nombre": "Ciprofloxacina",
+        "bioequivalentes": [
+            "Baycip",
+            "Ciloxan",
+            "Ciprofloxacino Stada"
+        ]
+    }
+]

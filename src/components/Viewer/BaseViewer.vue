@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-75p" style="background-color: var(--primary-soft-color);">
                 <InnerViewer></InnerViewer>
+                <!-- <Viewer2></Viewer2> -->
                 <button class="send_btn">
                     <img src="assets/Send.svg" alt="Enviar" class="white_filter">
                 </button>
@@ -21,13 +22,14 @@
 import BaseActionSideBar from './Action Side Bar/BaseActionSideBar.vue';
 import InnerViewer from './InnerViewer.vue';
 import MainHeader from './MainHeader.vue';
-
+import Viewer2 from './Viewer2.vue';
 
 export default {
     components: {
     InnerViewer,
     BaseActionSideBar,
-    MainHeader
+    MainHeader,
+    Viewer2
 },
 };
 </script>
@@ -36,13 +38,13 @@ export default {
 .col-75p {
     flex: 0 0 75%;
     max-width: 75%;
-    max-height: 80vh;
+    height: 700px;
+    position: relative;
 }
 
 .col-25p {
     flex: 0 0 25%;
     max-width: 25%;
-    max-height: 80vh;
 }
 
 .send_btn {
@@ -50,12 +52,13 @@ export default {
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     padding: 12px;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     bottom: 0;
-    left: 2vw;
+    left: 0;
 }
 
 .send_btn img {
